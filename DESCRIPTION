@@ -1,0 +1,20 @@
+Package: cropZoning
+Type: Package
+Title: Climate crop zoning for the most common crops of Brazil with
+        TerraClimate dataset
+Version: 0.1.0
+Author: Roberto Filgueiras [aut, cre] (<https://www.researchgate.net/profile/Roberto_Filgueiras>),
+        Luan Peroni Venancio (<https://www.researchgate.net/profile/Luan_Venancio>),
+        Catariny Cabral Aleman (<https://www.researchgate.net/profile/Catariny_Aleman>),
+        Fernando Fran<e7>a da Cunha (<https://www.researchgate.net/profile/Fernando_Cunha16>),
+Maintainer: Roberto Filgueiras <betofilgueiras@gmail.com>
+Description: cropZoning uses minimum and maximum air temperature data from TerraClimate dataset (http://www.climatologylab.org/terraclimate.html) to make climate zoning of different crops (air temperature based) for Brazilian territory.
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+License: GPL-2
+Depends: R (>= 2.10)
+Imports: raster, tidyr, ggplot2, rgdal
+BugReports: https://github.com/FilgueirasR/cropZoning/issues
+NeedsCompilation: no
+Packaged: 2020-12-15 16:17:07 UTC; Filgueiras

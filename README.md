@@ -1,0 +1,53 @@
+# cropZoning
+
+<div class="fluid-row" id="header">
+    <img src='/www/cropZoning_figure.png' height='150' width='auto' align='right'>
+
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of cropZoning is to make climate zoning of different crops (air temperature based) for any region of Brazil. For this
+cropZoning uses  minimum and maximum air temperature from Terraclimate dataset (http://www.climatologylab.org/terraclimate.html). 
+
+
+## Installation
+
+To install the last version of cropZoning package follow this steps:
+
+``` r
+devtools::install_github(FilgueirasR/cropZoning)
+
+```
+
+## Example
+
+This is a basic example which shows you how to run the cropZoning package:
+
+``` r
+library(cropZoning)
+## basic example code
+
+devtools::install_github("FilgueirasR/cropZoning")
+library(cropZoning)
+
+image_tmin<-loadROI(variable = "tmin", region = "brazil", sub_region = 19) # sub_region = Rio Grande do Norte
+image_tmax<-loadROI(variable = "tmax", region = "brazil", sub_region = 19) # sub_region = Rio Grande do Norte
+
+start_date<-c('1958-01-01')
+end_date<-c('2017-12-01')
+
+image_tmean<- tmean(tmax_stack = image_tmax , tmin_stack = image_tmin)
+
+monthly_tmean <- cropZoning::tmean_monthly_stack(tmean_stack = image_tmean, start_date = start_date, end_date = end_date)
+plot(monthly_tmean)
+
+cz<-ccrop_zoning(monthly_tmean, crop_name = "Abacaxi")
+plot(cz)
+
+plot_ccrop_zoning(cz)
+
+
+
+```
+
