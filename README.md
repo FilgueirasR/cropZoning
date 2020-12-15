@@ -27,14 +27,14 @@ This is a basic example which shows you how to run the cropZoning package:
 ``` r
 library(cropZoning)
 ## basic example code
-
-devtools::install_github("FilgueirasR/cropZoning")
+#devtools::install_github("FilgueirasR/cropZoning")
 library(cropZoning)
+library(raster)
 
 image_tmin<-loadROI(variable = "tmin", region = "brazil", sub_region = 19) # sub_region = Rio Grande do Norte
 image_tmax<-loadROI(variable = "tmax", region = "brazil", sub_region = 19) # sub_region = Rio Grande do Norte
 
-start_date<-c('1958-01-01')
+start_date<-c('2000-01-01')
 end_date<-c('2017-12-01')
 
 image_tmean<- tmean(tmax_stack = image_tmax , tmin_stack = image_tmin)
@@ -42,7 +42,7 @@ image_tmean<- tmean(tmax_stack = image_tmax , tmin_stack = image_tmin)
 monthly_tmean <- cropZoning::tmean_monthly_stack(tmean_stack = image_tmean, start_date = start_date, end_date = end_date)
 plot(monthly_tmean)
 
-cz<-ccrop_zoning(monthly_tmean, crop_name = "Abacaxi")
+cz<-sr_ccrop_zoning(monthly_tmean, temp1= 10, temp2= 20, temp3 = 30, temp4 = 40)
 plot(cz)
 
 plot_ccrop_zoning(cz)
