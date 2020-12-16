@@ -6,7 +6,7 @@ Version: 0.1.0
 Author: Roberto Filgueiras [aut, cre] (<https://www.researchgate.net/profile/Roberto_Filgueiras>),
         Luan Peroni Venancio (<https://www.researchgate.net/profile/Luan_Venancio>),
         Catariny Cabral Aleman (<https://www.researchgate.net/profile/Catariny_Aleman>),
-        Fernando Fran<e7>a da Cunha (<https://www.researchgate.net/profile/Fernando_Cunha16>),
+        Fernando Franca da Cunha (<https://www.researchgate.net/profile/Fernando_Cunha16>),
 Maintainer: Roberto Filgueiras <betofilgueiras@gmail.com>
 Description: cropZoning uses minimum and maximum air temperature data from TerraClimate dataset (http://www.climatologylab.org/terraclimate.html) to make climate zoning of different crops (air temperature based) for Brazilian territory.
 Encoding: UTF-8

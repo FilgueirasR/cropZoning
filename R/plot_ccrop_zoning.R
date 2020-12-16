@@ -7,6 +7,17 @@
 #' @import ggplot2
 #' @importFrom tidyr gather
 #' @importFrom stats na.omit
+#' @examples 
+#' \dontrun{
+#' plot_ccrop_zoning(zoning.matrix)
+#' 
+#' climatic zoning classes: 
+#'                        - ST - suitable air temperature;
+#'                        - RLT - Restricted due to low temperature;
+#'                        - RHT - Restricted due to high temperature;
+#'                        - ULT - Unsuitable due to low temperature;
+#'                        - UHT - Unsuitable due to high temperature.
+#' }
 #' @return Returns a  plot (gg file) of monthly climate crop zoning
 #' @export
 
@@ -15,8 +26,8 @@ plot_ccrop_zoning<-function(zoning_stack){
   df <- as.data.frame(rasterToPoints(zoning_stack))
   for(i in 3:14){
     df[,i] <- factor(df[,i],levels=c(1,2,3, 4, 5),
-                     labels=c("Suitable", "Cold restricted", "Heat restricted","Unsuitable - cold",
-                              "unsuitable - heat"))
+                     labels=c("ST", "RLT", "RHT","ULT",
+                              "UHT"))
   }
 
 
@@ -28,9 +39,9 @@ plot_ccrop_zoning<-function(zoning_stack){
   df$Months<-factor(df$Months, labels= Name.months[1:12], ordered=TRUE)
   factor(df$Months)
 
-  cbbPalette <- c("Suitable" = "#009E73", "Cold restricted" = "#E69F00",
-                  "Heat restricted" = "#56B4E9", "Unsuitable - cold" = "#000000",
-                  "unsuitable - heat" = "#F0E442")# SAT = Suitable air temperature;
+  cbbPalette <- c("ST" = "#009E73", "RLT" = "#56B4E9",
+                  "RHT" = "#F0E442", "ULT" = "#000000",
+                  "UHT" = "#E69F00")# SAT = Suitable air temperature;
 
   ggplot(data=df, aes(y = df$y, x = df$x)) +
     geom_raster(aes(fill= df$`climatic zoning`))+
