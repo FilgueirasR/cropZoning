@@ -42,7 +42,7 @@ image_tmean<- tmean(tmax_stack = image_tmax , tmin_stack = image_tmin)
 monthly_tmean <- cropZoning::tmean_monthly_stack(tmean_stack = image_tmean, start_date = start_date, end_date = end_date)
 plot(monthly_tmean)
 
-cz<-sr_ccrop_zoning(monthly_tmean, temp1= 10, temp2= 20, temp3 = 30, temp4 = 40)
+cz<-ccrop_zoning(monthly_tmean, temp1= 10, temp2= 20, temp3 = 30, temp4 = 40)
 plot(cz)
 
 plot_ccrop_zoning(cz)
