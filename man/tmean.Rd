@@ -19,6 +19,6 @@ This fuction will calculate the mean air temperature from  minimum and maximum a
 }
 \examples{
 \dontrun{
-tmean <- tmean(tmax_stack = tmax, tmin_stack = tmin)
+image_tmean <- tmean(tmax_stack = image_tmax, tmin_stack = image_tmin)
 }
 }

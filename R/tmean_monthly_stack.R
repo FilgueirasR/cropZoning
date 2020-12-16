@@ -9,7 +9,7 @@
 #' \dontrun{
 #' start_date <- c('2000-01-01')
 #' end_date <- c('2017-12-01')
-#' tmean_monthly <- mean_monthly_stack(tmean_stack = tmean, start_date = start_date, end_date = end_date)
+#' tmean_monthly <- tmean_monthly_stack(tmean_stack = image_tmean, start_date = start_date, end_date = end_date)
 #' }
 #' @export
 #' @return Returns a stack with a monthly mean air temperature from a period of time

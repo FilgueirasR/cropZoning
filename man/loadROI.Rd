@@ -30,7 +30,7 @@ image_tmax<-loadROI(variable = "tmax", region = "brazil", sub_region = 13)
 #For Brazilian Biomes:
 
 see_brazil_biomes()
-tmin_state<- loadROI(variable = tmin, region = "biomes_brazil", sub_region = 2)# sub regions: 1:6 (biomes)
+image_tmin<- loadROI(variable = tmin, region = "biomes_brazil", sub_region = 2)# sub regions: 1:6 (biomes)
 
 }
 }

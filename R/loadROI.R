@@ -17,7 +17,7 @@
 #' #For Brazilian Biomes:
 #'
 #' see_brazil_biomes()
-#' tmin_state<- loadROI(variable = tmin, region = "biomes_brazil", sub_region = 2)# sub regions: 1:6 (biomes)
+#' image_tmin<- loadROI(variable = tmin, region = "biomes_brazil", sub_region = 2)# sub regions: 1:6 (biomes)
 #'
 #' }
 #' @return Load the tmin (minimum air temperature) or tmax (maximum air temperature) rasterstack

@@ -4,10 +4,10 @@
 \alias{plot_ccrop_zoning}
 \title{Function to plot the climate crop zoning stack  generated in ccrop_zoning}
 \usage{
-plot_ccrop_zoning(zoning_stack)
+plot_ccrop_zoning(zoning)
 }
 \arguments{
-\item{zoning_stack}{stack}
+\item{zoning}{A stack generated in ccrop_zoning}
 }
 \value{
 Returns a  plot (gg file) of monthly climate crop zoning
@@ -17,7 +17,7 @@ This function will plot the ccrop_zoning.
 }
 \examples{
 \dontrun{
-plot_ccrop_zoning(zoning.matrix)
+plot_ccrop_zoning(zoning)
 
 climatic zoning classes: 
                        - ST - suitable air temperature;
