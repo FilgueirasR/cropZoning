@@ -1,9 +1,9 @@
-#' Function to plot the climate crop zoning stack  generated in ccrop_zoning or sr_ccrop_zoning
+#' Function to plot the climate crop zoning stack  generated in ccrop_zoning
 #'
 #'
 #' @param zoning_stack stack
 
-#' @description This function will plot the ccrop_zoning map with the folowing classes: suitable; cold restriced; heat restriced, unsuitable-cold, and unsuitable-heat.
+#' @description This function will plot the ccrop_zoning.
 #' @import ggplot2
 #' @importFrom tidyr gather
 #' @importFrom stats na.omit

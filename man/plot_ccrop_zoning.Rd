@@ -2,7 +2,7 @@
 % Please edit documentation in R/plot_ccrop_zoning.R
 \name{plot_ccrop_zoning}
 \alias{plot_ccrop_zoning}
-\title{Function to plot the climate crop zoning stack  generated in ccrop_zoning or sr_ccrop_zoning}
+\title{Function to plot the climate crop zoning stack  generated in ccrop_zoning}
 \usage{
 plot_ccrop_zoning(zoning_stack)
 }
@@ -13,5 +13,17 @@ plot_ccrop_zoning(zoning_stack)
 Returns a  plot (gg file) of monthly climate crop zoning
 }
 \description{
-This function will plot the ccrop_zoning map with the folowing classes: suitable; cold restriced; heat restriced, unsuitable-cold, and unsuitable-heat.
+This function will plot the ccrop_zoning.
+}
+\examples{
+\dontrun{
+plot_ccrop_zoning(zoning.matrix)
+
+climatic zoning classes: 
+                       - ST - suitable air temperature;
+                       - RLT - Restricted due to low temperature;
+                       - RHT - Restricted due to high temperature;
+                       - ULT - Unsuitable due to low temperature;
+                       - UHT - Unsuitable due to high temperature.
+}
 }

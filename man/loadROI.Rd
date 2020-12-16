@@ -24,12 +24,13 @@ This fuction will load the air temperature data for the region of interest (ROI)
 #For Brazilian states
 
 see_brazil_states()
-tmin_state<- loadRoI(variable = tmin, region = brazil, sub_region = 13)# sub regions: 1:27 (states)
+image_tmin<-loadROI(variable = "tmin", region = "brazil", sub_region = 13) # sub_regions 1:27
+image_tmax<-loadROI(variable = "tmax", region = "brazil", sub_region = 13)
 
 #For Brazilian Biomes:
 
 see_brazil_biomes()
-tmin_state<- loadRoI(variable = tmin, region = biomes_brazil, sub_region = 2)# sub regions: 1:6 (biomes)
+tmin_state<- loadROI(variable = tmin, region = "biomes_brazil", sub_region = 2)# sub regions: 1:6 (biomes)
 
 }
 }
