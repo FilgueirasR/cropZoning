@@ -25,7 +25,6 @@ devtools::install_github("FilgueirasR/cropZoning")
 This is a basic example which shows you how to run the cropZoning package:
 
 ``` r
-library(cropZoning)
 ## basic example code
 
 #devtools::install_github("FilgueirasR/cropZoning")
