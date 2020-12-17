@@ -16,7 +16,7 @@ cropZoning uses  minimum and maximum air temperature from Terraclimate dataset (
 To install the last version of cropZoning package follow this steps:
 
 ``` r
-devtools::install_github(FilgueirasR/cropZoning)
+devtools::install_github("FilgueirasR/cropZoning")
 
 ```
 
@@ -27,9 +27,13 @@ This is a basic example which shows you how to run the cropZoning package:
 ``` r
 library(cropZoning)
 ## basic example code
+
 #devtools::install_github("FilgueirasR/cropZoning")
 library(cropZoning)
 library(raster)
+
+
+see_brazil_states()
 
 image_tmin<-loadROI(variable = "tmin", region = "brazil", sub_region = 19) # sub_region = Rio Grande do Norte
 image_tmax<-loadROI(variable = "tmax", region = "brazil", sub_region = 19) # sub_region = Rio Grande do Norte
