@@ -14,6 +14,7 @@ This fuction will show the biomes available in the package and how we can call e
 }
 \examples{
 \dontrun{
+
 see_brazil_biomes()
 }
 }

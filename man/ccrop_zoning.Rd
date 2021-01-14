@@ -17,20 +17,36 @@ ccrop_zoning(temp_per_month, temp1, temp2, temp3, temp4)
 
 \item{temp4}{unsuitable due to high temperature (numeric)}
 }
-\value{
-Returns a stack with a monthly climate crop zoning
-}
 \description{
 This function will calculate the climate crop zoning for the range of suitable air temperature informed.
 }
 \examples{
 \dontrun{
+### Example with Brazil states
 
-tmean <- tmean(tmax_stack = tmax, tmin_stack = tmin)
+see_brazil_states()
+
+image_tmin<-loadROI(variable = "tmin", 
+                   region = "brazil", 
+                   sub_region = 13) # sub_regions 1:27
+                   
+image_tmax<-loadROI(variable = "tmax",
+                   region = "brazil", 
+                   sub_region = 13)
+                   
+image_tmean <- tmean(tmax_stack = image_tmax, tmin_stack = image_tmin)
+
+
 start_date <- c('2000-01-01')
 end_date <- c('2017-12-01')
-tmean_monthly <- mean_monthly_stack(tmean_stack = tmean, start_date = start_date, end_date = end_date)
-zoning <- ccrop_zoning(temp_per_month = tmean_monthly, temp1 = 10 , temp2 = 20, temp3 = 30, temp4 = 40)
 
+tmean_monthly <- tmean_monthly_stack(tmean_stack = img_tmean,
+                                    start_date = start_date,
+                                    end_date = end_date)
+                                    
+                    
+zoning <- ccrop_zoning(temp_per_month = tmean_monthly,
+                       temp1 = 10 , temp2 = 20, 
+                       temp3 = 30, temp4 = 40)
 }
 }

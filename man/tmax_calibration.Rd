@@ -21,6 +21,7 @@ This fuction will calibrate the maximum air temperature from TerraClimate datase
 }
 \examples{
 \dontrun{
+
 tmax_cal<- tmax_calibrated(slope = 0.874787, intercept = 4.612894 , tmax_stack = tmax);
 }
 }

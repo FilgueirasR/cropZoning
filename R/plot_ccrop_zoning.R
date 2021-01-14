@@ -7,18 +7,22 @@
 #' @importFrom stats na.omit
 #' @param zoning A stack generated in ccrop_zoning
 #' @examples 
+#' ### Data preparation
 #' \dontrun{
-#' plot_ccrop_zoning(zoning)
+#' ###ploting the cropzoning:
 #' 
-#' climatic zoning classes: 
-#'                        - ST - suitable air temperature;
-#'                        - RLT - Restricted due to low temperature;
-#'                        - RHT - Restricted due to high temperature;
-#'                        - ULT - Unsuitable due to low temperature;
+#' zoning_plot <- plot_ccrop_zoning(zoning)
+#' 
+#' ### climatic zoning classes: 
+#'                        - ST - suitable air temperature,
+#'                        - RLT - Restricted due to low temperature,
+#'                        - RHT - Restricted due to high temperature,
+#'                        - ULT - Unsuitable due to low temperature,
 #'                        - UHT - Unsuitable due to high temperature.
 #' }
-#' @return Returns a  plot (gg file) of monthly climate crop zoning
+#' @return Returns a  plot (gg file) of monthly climate crop zoning.
 #' @export
+
 
 
 plot_ccrop_zoning<-function(zoning){

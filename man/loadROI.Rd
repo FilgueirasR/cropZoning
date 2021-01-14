@@ -21,16 +21,31 @@ This fuction will load the air temperature data for the region of interest (ROI)
 }
 \examples{
 \dontrun{
-#For Brazilian states
 
+### Loading minimum air temperature and maximum air temperature based on Brazil states.
 see_brazil_states()
-image_tmin<-loadROI(variable = "tmin", region = "brazil", sub_region = 13) # sub_regions 1:27
-image_tmax<-loadROI(variable = "tmax", region = "brazil", sub_region = 13)
 
-#For Brazilian Biomes:
+image_tmin<-loadROI(variable = "tmin", 
+                   region = "brazil", 
+                   sub_region = 13) # sub_regions 1:27
+                    
+image_tmax<-loadROI(variable = "tmax",
+                   region = "brazil", 
+                   sub_region = 13)
 
+### Loading minimum air temperature and maximum air temperature based on Brazil biomes.
 see_brazil_biomes()
-image_tmin<- loadROI(variable = tmin, region = "biomes_brazil", sub_region = 2)# sub regions: 1:6 (biomes)
+
+image_tmin<- loadROI(variable = tmin, 
+                    region = "biomes_brazil",
+                    sub_region = 13)# sub regions: 1:6 (biomes)
+                    
+image_tmax<-loadROI(variable = "tmax",
+                   region = "brazil", 
+                   sub_region = 13)
 
 }
+}
+\references{
+The images used in this package can be found in the paper: Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch, 2018, Terraclimate, a high-resolution global dataset of monthly climate and climatic water balance from 1958-2015, Scientific Data.
 }

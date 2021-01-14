@@ -6,6 +6,7 @@
 #' @import raster
 #' @examples
 #' \dontrun{
+#' 
 #' image_tmean <- tmean(tmax_stack = image_tmax, tmin_stack = image_tmin)
 #' }
 #' @return Returns a Rasterstack of mean air temperature.

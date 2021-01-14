@@ -1,5 +1,6 @@
 #' Load the data for the region of interest (ROI)
 #'
+#'
 #' @description This fuction will load the air temperature data for the region of interest (ROI).
 #' @param variable Stack of minimum (tmin) or maximum (tmax) air temperature (Rasterstack).
 #' @param region Use the "brazil" shp file to extract the rasterstack (variable) for one state (Brazilian state), or use the "biomes_brazil" to extract the Rasterstack (variable) for one biome of Brazil.
@@ -8,19 +9,33 @@
 #' @import rgdal
 #' @examples
 #' \dontrun{
-#' #For Brazilian states
-#'
+#' 
+#' ### Loading minimum air temperature and maximum air temperature based on Brazil states.
 #' see_brazil_states()
-#' image_tmin<-loadROI(variable = "tmin", region = "brazil", sub_region = 13) # sub_regions 1:27
-#' image_tmax<-loadROI(variable = "tmax", region = "brazil", sub_region = 13)
+#' 
+#' image_tmin<-loadROI(variable = "tmin", 
+#'                    region = "brazil", 
+#'                    sub_region = 13) # sub_regions 1:27
+#'                     
+#' image_tmax<-loadROI(variable = "tmax",
+#'                    region = "brazil", 
+#'                    sub_region = 13)
 #'
-#' #For Brazilian Biomes:
-#'
+#' ### Loading minimum air temperature and maximum air temperature based on Brazil biomes.
 #' see_brazil_biomes()
-#' image_tmin<- loadROI(variable = tmin, region = "biomes_brazil", sub_region = 2)# sub regions: 1:6 (biomes)
-#'
+#' 
+#' image_tmin<- loadROI(variable = tmin, 
+#'                     region = "biomes_brazil",
+#'                     sub_region = 13)# sub regions: 1:6 (biomes)
+#'                     
+#' image_tmax<-loadROI(variable = "tmax",
+#'                    region = "brazil", 
+#'                    sub_region = 13)
+#' 
 #' }
 #' @return Load the tmin (minimum air temperature) or tmax (maximum air temperature) rasterstack
+#' @references
+#' The images used in this package can be found in the paper: Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch, 2018, Terraclimate, a high-resolution global dataset of monthly climate and climatic water balance from 1958-2015, Scientific Data.
 #' @export
 
 

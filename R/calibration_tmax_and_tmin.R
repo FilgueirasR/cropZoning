@@ -1,5 +1,6 @@
 #' Calibration of maximum air temperature from TerraClimate
 #'
+#'
 #' @description This fuction will calibrate the maximum air temperature from TerraClimate dataset based in the relationship with observed weather stations data.
 #' @param tmax_stack stack of maximum air temperature
 #' @param slope the slope of the linear regression (numeric)
@@ -7,6 +8,7 @@
 #' @import raster
 #' @examples
 #' \dontrun{
+#' 
 #' tmax_cal<- tmax_calibrated(slope = 0.874787, intercept = 4.612894 , tmax_stack = tmax);
 #' }
 #' @return Returns a Rasterstack of mean air temperature.

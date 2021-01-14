@@ -3,6 +3,7 @@
 #' @description This fuction will show the biomes available in the package and how we can call each biome polygon.
 #' @examples
 #' \dontrun{
+#' 
 #' see_brazil_biomes()
 #' }
 #' @return The biomes information available to run the cropZoning package.

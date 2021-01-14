@@ -14,6 +14,7 @@ This function will show the Brazilian state available in the package and how we 
 }
 \examples{
 \dontrun{
+
 see_brazil_states()
 }
 }

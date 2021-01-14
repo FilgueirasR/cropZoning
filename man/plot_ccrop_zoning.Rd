@@ -10,20 +10,23 @@ plot_ccrop_zoning(zoning)
 \item{zoning}{A stack generated in ccrop_zoning}
 }
 \value{
-Returns a  plot (gg file) of monthly climate crop zoning
+Returns a  plot (gg file) of monthly climate crop zoning.
 }
 \description{
 This function will plot the ccrop_zoning.
 }
 \examples{
+### Data preparation
 \dontrun{
-plot_ccrop_zoning(zoning)
+###ploting the cropzoning:
 
-climatic zoning classes: 
-                       - ST - suitable air temperature;
-                       - RLT - Restricted due to low temperature;
-                       - RHT - Restricted due to high temperature;
-                       - ULT - Unsuitable due to low temperature;
+zoning_plot <- plot_ccrop_zoning(zoning)
+
+### climatic zoning classes: 
+                       - ST - suitable air temperature,
+                       - RLT - Restricted due to low temperature,
+                       - RHT - Restricted due to high temperature,
+                       - ULT - Unsuitable due to low temperature,
                        - UHT - Unsuitable due to high temperature.
 }
 }
