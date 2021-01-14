@@ -22,8 +22,7 @@ Authors@R: c(person(given = "Roberto",
 Author: Roberto Filgueiras [aut, cre],
         Luan P. Venancio [aut],
         Catariny C. Aleman [aut],
-        Fernando F. da Cunha [aut],
-        RStudio [cph, fnd]
+        Fernando F. da Cunha [aut]
 Maintainer: Roberto Filgueiras <betofilgueiras@gmail.com>
 Description: This package uses minimum and maximum air temperature data from TerraClimate dataset (<http://www.climatologylab.org/terraclimate.html>) calibrated with automatic weather stations (AWS) of of National Meteorological Institute of Brazil (INMET) to make climate zoning (air temperature based) for Brazilian territory.
 Encoding: UTF-8
