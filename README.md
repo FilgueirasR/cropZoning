@@ -7,8 +7,9 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of cropZoning is to make climate zoning of different crops (air temperature based) for any region of Brazil. For this
-cropZoning uses  minimum and maximum air temperature from Terraclimate dataset (http://www.climatologylab.org/terraclimate.html). 
+The goal of cropZoning is to make climate zoning of different crops (air temperature based) for any region of Brazil. For this,
+cropZoning uses minimum and maximum air temperature from Terraclimate dataset (http://www.climatologylab.org/terraclimate.html)
+calibrated with the automatic weather stations of National Meteorological Institute of Brazil (INMET).
 
 
 ## Installation
