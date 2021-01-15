@@ -19,12 +19,7 @@ Authors@R: c(person(given = "Roberto",
                     family = "da Cunha",
                     role = ("aut"),
                     comment = c(ORCID = "0000-0002-1671-1021")))
-Author: Roberto Filgueiras [aut, cre] (<https://www.researchgate.net/profile/Roberto_Filgueiras>),
-        Luan P. Venancio [aut] (<https://www.researchgate.net/profile/Luan_Venancio>),
-        Catariny C. Aleman [aut] (<https://www.researchgate.net/profile/Catariny_Aleman>),
-        Fernando F. da Cunha [aut] (<https://www.researchgate.net/profile/Fernando_Cunha16>)
-Maintainer: Roberto Filgueiras <betofilgueiras@gmail.com>
-Description: Climate crop zoning based in minimum and maximum air temperature. The data used in the package are from TerraClimate dataset (<http://www.climatologylab.org/terraclimate.html>), but, it have been calibrated with automatic weather stations  of National Meteorological Institute of Brazil.  The climate crop zoning of this package can be run for all the Brazilian territory.
+Description: Climate crop zoning based in minimum and maximum air temperature. The data used in the package are from 'TerraClimate' dataset (<http://www.climatologylab.org/terraclimate.html>), but, it have been calibrated with automatic weather stations  of National Meteorological Institute of Brazil.  The climate crop zoning of this package can be run for all the Brazilian territory.
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
