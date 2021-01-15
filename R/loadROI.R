@@ -1,10 +1,10 @@
 #' Load the data for the region of interest (ROI)
 #'
 #'
-#' @description This fuction will load the air temperature data for the region of interest (ROI).
+#' @description This function will load the air temperature data for the region of interest (ROI).
 #' @param variable Stack of minimum (tmin) or maximum (tmax) air temperature (Rasterstack).
-#' @param region Use the "brazil" shp file to extract the rasterstack (variable) for one state (Brazilian state), or use the "biomes_brazil" to extract the Rasterstack (variable) for one biome of Brazil.
-#' @param sub_region You have two options in this section, if you choice the brazil (in region parameter) you need to choice the Brazilian states, but if you choice the biomes-brasil (in region parameter) you must choice one of Brazilian biomes.
+#' @param region Use the "brazil" shapefile to extract the Rasterstack (variable) for one state (Brazilian state), or use the "biomes_brazil" to extract the Rasterstack (variable) for one biome of Brazil.
+#' @param sub_region You have two options in this section, if you choice the brazil (in region parameter) you need to choice the Brazilian states, but if you choice the biomes_brazil (in region parameter) you must choice one of Brazilian biomes.
 #' @import raster
 #' @import rgdal
 #' @examples
@@ -26,11 +26,11 @@
 #' 
 #' image_tmin<- loadROI(variable = tmin, 
 #'                     region = "biomes_brazil",
-#'                     sub_region = 13)# sub regions: 1:6 (biomes)
+#'                     sub_region = 5)# sub regions: 1:6 (biomes)
 #'                     
 #' image_tmax<-loadROI(variable = "tmax",
-#'                    region = "brazil", 
-#'                    sub_region = 13)
+#'                    region = "biomes_brazil", 
+#'                    sub_region = 5)
 #' 
 #' }
 #' @return Load the tmin (minimum air temperature) or tmax (maximum air temperature) rasterstack

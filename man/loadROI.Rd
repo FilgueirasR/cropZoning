@@ -9,15 +9,15 @@ loadROI(variable, region, sub_region)
 \arguments{
 \item{variable}{Stack of minimum (tmin) or maximum (tmax) air temperature (Rasterstack).}
 
-\item{region}{Use the "brazil" shp file to extract the rasterstack (variable) for one state (Brazilian state), or use the "biomes_brazil" to extract the Rasterstack (variable) for one biome of Brazil.}
+\item{region}{Use the "brazil" shapefile to extract the Rasterstack (variable) for one state (Brazilian state), or use the "biomes_brazil" to extract the Rasterstack (variable) for one biome of Brazil.}
 
-\item{sub_region}{You have two options in this section, if you choice the brazil (in region parameter) you need to choice the Brazilian states, but if you choice the biomes-brasil (in region parameter) you must choice one of Brazilian biomes.}
+\item{sub_region}{You have two options in this section, if you choice the brazil (in region parameter) you need to choice the Brazilian states, but if you choice the biomes_brazil (in region parameter) you must choice one of Brazilian biomes.}
 }
 \value{
 Load the tmin (minimum air temperature) or tmax (maximum air temperature) rasterstack
 }
 \description{
-This fuction will load the air temperature data for the region of interest (ROI).
+This function will load the air temperature data for the region of interest (ROI).
 }
 \examples{
 \dontrun{
@@ -38,11 +38,11 @@ see_brazil_biomes()
 
 image_tmin<- loadROI(variable = tmin, 
                     region = "biomes_brazil",
-                    sub_region = 13)# sub regions: 1:6 (biomes)
+                    sub_region = 5)# sub regions: 1:6 (biomes)
                     
 image_tmax<-loadROI(variable = "tmax",
-                   region = "brazil", 
-                   sub_region = 13)
+                   region = "biomes_brazil", 
+                   sub_region = 5)
 
 }
 }

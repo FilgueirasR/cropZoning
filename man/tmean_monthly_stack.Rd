@@ -7,7 +7,7 @@
 tmean_monthly_stack(tmean_stack, start_date, end_date)
 }
 \arguments{
-\item{tmean_stack}{Stack of mean air temperature based on minimum and maximum air temperature Rastestack}
+\item{tmean_stack}{Stack of mean air temperature based on minimum and maximum air temperature Rasterstack}
 
 \item{start_date}{Date that start the investigation, should be in the following format (1958-01-01 /Year-Month-Day)}
 
@@ -17,7 +17,7 @@ tmean_monthly_stack(tmean_stack, start_date, end_date)
 Returns a stack with a monthly mean air temperature from a period of time
 }
 \description{
-This fucntion will calculate the mean monthly air temperature based on the period of time selected (start_date and end_date).
+This function will calculate the mean monthly air temperature based on the period of time selected (start_date and end_date).
 }
 \examples{
 \dontrun{

@@ -1,8 +1,8 @@
 #' Monthly mean air temperature estimation to generate the climate crop zoning
 #'
 #'
-#' @description This fucntion will calculate the mean monthly air temperature based on the period of time selected (start_date and end_date).
-#' @param tmean_stack Stack of mean air temperature based on minimum and maximum air temperature Rastestack
+#' @description This function will calculate the mean monthly air temperature based on the period of time selected (start_date and end_date).
+#' @param tmean_stack Stack of mean air temperature based on minimum and maximum air temperature Rasterstack
 #' @param start_date Date that start the investigation, should be in the following format (1958-01-01 /Year-Month-Day)
 #' @param end_date Date that end the investigation, should be in the following format (2017-12-31 /Year-Month-Day)
 #' @import raster
