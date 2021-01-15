@@ -1,7 +1,7 @@
 # cropZoning
 
 <div class="fluid-row" id="header">
-    <img src='/www/cropZoning_figure.png' height='150' width='auto' align='right'>
+    <img src='https://lh4.googleusercontent.com/m8mVVRR2t1HhIr8XygEllBG8JfsYeUBxm0Yf5wbqw789qIBhLVoGF4-EMWAoMBcKtJn2XFe-giIZrptanZRHv2Ms8hAzXE2zjymYNJ2gIFPhm2VV0JGf=w1280' height='150' width='auto' align='right'>
 
 
 <!-- badges: start -->
