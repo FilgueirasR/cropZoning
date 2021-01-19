@@ -8,6 +8,7 @@
 #' @param years The period in years that the function should download. 
 #' @import raster
 #' @import rgdal
+#' @import ncdf4
 #' @examples
 #' \dontrun{
 #' 
