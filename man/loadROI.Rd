@@ -2,7 +2,8 @@
 % Please edit documentation in R/loadROI.R
 \name{loadROI}
 \alias{loadROI}
-\title{Load the data for the region of interest (ROI)}
+\title{Load the data for the region of interest (ROI)
+\if{html}{\figure{logo_cropZoning.png}{options: height= 300 width=auto style = float:right alt= Our logo}}}
 \usage{
 loadROI(variable, region, sub_region)
 }
@@ -14,10 +15,10 @@ loadROI(variable, region, sub_region)
 \item{sub_region}{You have two options in this section, if you choice the brazil (in region parameter) you need to choice the Brazilian states, but if you choice the biomes_brazil (in region parameter) you must choice one of Brazilian biomes.}
 }
 \value{
-Load the tmin (minimum air temperature) or tmax (maximum air temperature) rasterstack
+Load the tmin image example (minimum air temperature) or tmax image example (maximum air temperature) rasterstack
 }
 \description{
-This function will load the air temperature data for the region of interest (ROI).
+This function will load the air temperature data (Rasterstack) for the region of interest (ROI). The images loaded by this function are intended to be used, as example, for calculating the climatic zoning of crops. To calculate the climatic zoning of the crops, you first have to calculate the mean air temperature (function tmean) and the monthly air temperature (function tmean_monthly).
 }
 \examples{
 \dontrun{
@@ -25,22 +26,22 @@ This function will load the air temperature data for the region of interest (ROI
 ### Loading minimum air temperature and maximum air temperature based on Brazil states.
 see_brazil_states()
 
-image_tmin<-loadROI(variable = "tmin", 
+image_tmin <-loadROI(variable = "tmin", 
                    region = "brazil", 
                    sub_region = 13) # sub_regions 1:27
                     
-image_tmax<-loadROI(variable = "tmax",
+image_tmax <-loadROI(variable = "tmax",
                    region = "brazil", 
                    sub_region = 13)
 
 ### Loading minimum air temperature and maximum air temperature based on Brazil biomes.
 see_brazil_biomes()
 
-image_tmin<- loadROI(variable = tmin, 
+image_tmin <- loadROI(variable = tmin, 
                     region = "biomes_brazil",
                     sub_region = 5)# sub regions: 1:6 (biomes)
                     
-image_tmax<-loadROI(variable = "tmax",
+image_tmax <-loadROI(variable = "tmax",
                    region = "biomes_brazil", 
                    sub_region = 5)
 

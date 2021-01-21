@@ -1,4 +1,5 @@
 #' Function to see the Brazilian states available in cropZoning package and how we can use it in the loadROI function
+#' \if{html}{\figure{logo_cropZoning.png}{options: height= 300 width=auto style = float:right alt= Our logo}}
 #'
 #' @description This function will show the Brazilian state available in the package and how we can call each state polygon.
 #' @examples
@@ -6,7 +7,7 @@
 #' 
 #' see_brazil_states()
 #' }
-#' @return The Brazilian state information available in the package to run the cropZoning package.
+#' @return Returns a character strings listing the the Brazilian states available to run the cropZoning package.
 #' @export
 
 

@@ -2,7 +2,8 @@
 % Please edit documentation in R/tmean_monthly_stack.R
 \name{tmean_monthly_stack}
 \alias{tmean_monthly_stack}
-\title{Monthly mean air temperature estimation to generate the climate crop zoning}
+\title{Monthly mean air temperature estimation to generate the climate crop zoning
+\if{html}{\figure{logo_cropZoning.png}{options: height= 300 width=auto style = float:right alt= Our logo}}}
 \usage{
 tmean_monthly_stack(tmean_stack, start_date, end_date)
 }
@@ -14,7 +15,7 @@ tmean_monthly_stack(tmean_stack, start_date, end_date)
 \item{end_date}{Date that end the investigation, should be in the following format (2017-12-31 /Year-Month-Day)}
 }
 \value{
-Returns a stack with a monthly mean air temperature from a period of time
+Returns a Rasterstack object with a monthly mean air temperature from a period of time.
 }
 \description{
 This function will calculate the mean monthly air temperature based on the period of time selected (start_date and end_date).

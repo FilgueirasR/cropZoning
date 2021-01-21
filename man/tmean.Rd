@@ -2,7 +2,8 @@
 % Please edit documentation in R/tmean.R
 \name{tmean}
 \alias{tmean}
-\title{Mean air temperature calculation}
+\title{Mean air temperature calculation
+\if{html}{\figure{logo_cropZoning.png}{options: height= 300 width=auto style = float:right alt= Our logo}}}
 \usage{
 tmean(tmax_stack, tmin_stack)
 }
@@ -12,7 +13,7 @@ tmean(tmax_stack, tmin_stack)
 \item{tmin_stack}{stack of minimum air temperature}
 }
 \value{
-Returns a Rasterstack of mean air temperature.
+Returns a Rasterstack object of mean air temperature.
 }
 \description{
 This fuction will calculate the mean air temperature from  minimum and maximum air temperature data.

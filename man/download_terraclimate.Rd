@@ -2,12 +2,13 @@
 % Please edit documentation in R/download_terraclimate.R
 \name{download_terraclimate}
 \alias{download_terraclimate}
-\title{Download of maximum and minimum air temperature from 'TerraClimate'}
+\title{Download of maximum and minimum air temperature from 'TerraClimate'
+\if{html}{\figure{logo_cropZoning.png}{options: height= 300 width=auto style = float:right alt= Our logo}}}
 \usage{
 download_terraclimate(variable, years, region, sub_region)
 }
 \arguments{
-\item{variable}{variable to download. This function will download the minimum (tmin) or maximum (tmax) air temperature (Rasterstack).}
+\item{variable}{Variable to download. The variables can be the minimum (tmin) or maximum (tmax) air temperature of 'TerraClimate' (Rasterstack).}
 
 \item{years}{The period in years that the function should download.}
 
@@ -16,10 +17,10 @@ download_terraclimate(variable, years, region, sub_region)
 \item{sub_region}{You have two options in this section, if you choice the brazil (in region parameter) you need to choice the Brazilian states, but if you choice the biomes_brazil (in region parameter) you must choice one of Brazilian biomes.}
 }
 \value{
-Load the tmin (minimum air temperature) or tmax (maximum air temperature) rasterstack
+Returns a Rasterstack of tmin (minimum air temperature) or tmax (maximum air temperature).
 }
 \description{
-This function will download the tmax and tmin and will load a rasterstack according to the the region of interest (Region and sub_region).
+This function will download the tmax and tmin images and will load a rasterstack according to the the region of interest (Region and sub_region). The images downloaded by this function are intended to be used for calculating the climatic zoning of crops. To calculate the climatic zoning of the crops, you first have to calculate the mean air temperature (function tmean) and the monthly air temperature (function tmean_monthly).
 }
 \examples{
 \dontrun{
@@ -27,7 +28,7 @@ This function will download the tmax and tmin and will load a rasterstack accord
 ### Downloading the minimum air temperature and maximum air temperature based on Brazil states.
 see_brazil_states()
 
-img<-download_terraclimate(variable = "tmin",
+img <-download_terraclimate(variable = "tmin",
                           years = c(2018:2019),
                           region = "brazil",
                           sub_region = 13)
@@ -35,7 +36,7 @@ img<-download_terraclimate(variable = "tmin",
 ### Downloading the minimum air temperature and maximum air temperature based on Brazil states.
 see_brazil_biomes()
 
-img<-download_terraclimate(variable = "tmin",
+img <-download_terraclimate(variable = "tmin",
                           years = c(2018:2019),
                           region = "biomes_brazil",
                           sub_region = 6)

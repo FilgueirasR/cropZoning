@@ -2,7 +2,8 @@
 % Please edit documentation in R/calibration_tmax_and_tmin.R
 \name{tmax_calibration}
 \alias{tmax_calibration}
-\title{Calibration of maximum air temperature from TerraClimate}
+\title{Calibration of maximum air temperature from TerraClimate
+\if{html}{\figure{logo_cropZoning.png}{options: height= 300 width=auto style = float:right alt= Our logo}}}
 \usage{
 tmax_calibration(slope, intercept, tmax_stack)
 }
@@ -14,10 +15,10 @@ tmax_calibration(slope, intercept, tmax_stack)
 \item{tmax_stack}{stack of maximum air temperature}
 }
 \value{
-Returns a Rasterstack of mean air temperature.
+Returns a Rasterstack object of calibrated maximum air temperature.
 }
 \description{
-This fuction will calibrate the maximum air temperature from TerraClimate dataset based in the relationship with observed weather stations data.
+This function will calibrate the maximum air temperature from TerraClimate dataset based in the relationship with observed weather stations data.The values of slope and intercept informed in example correspond a calibration performed between 'Terraclimate' images and INMET automatic weather stations realized for all the brazilian territory.
 }
 \examples{
 \dontrun{

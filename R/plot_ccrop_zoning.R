@@ -1,7 +1,19 @@
 #' Function to plot the climate crop zoning stack  generated in ccrop_zoning
-#'
-#'
-#' @description This function will plot the ccrop_zoning.
+#' \if{html}{\figure{logo_cropZoning.png}{options: height= 300 width=auto style = float:right alt= Our logo}}
+#'  
+#' @description 
+#' This function will plot the ccrop_zoning output. The result of the plotting
+#' will generate a plot with the following classes.
+#' 
+#'   Climatic zoning classes:
+#' \itemize{
+#'   \item  ST: Suitable air temperature
+#'   \item RLT: Restricted due to low temperature 
+#'   \item RHT: Restricted due to high temperature 
+#'   \item ULT: Unsuitable due to low temperature 
+#'   \item UHT: Unsuitable due to high temperature 
+#' }
+#' 
 #' @import ggplot2
 #' @importFrom tidyr gather
 #' @importFrom stats na.omit
@@ -12,15 +24,8 @@
 #' ###ploting the cropzoning:
 #' 
 #' zoning_plot <- plot_ccrop_zoning(zoning)
-#' 
-#' ### climatic zoning classes: 
-#'                        - ST - suitable air temperature,
-#'                        - RLT - Restricted due to low temperature,
-#'                        - RHT - Restricted due to high temperature,
-#'                        - ULT - Unsuitable due to low temperature,
-#'                        - UHT - Unsuitable due to high temperature.
 #' }
-#' @return Returns a  plot (gg file) of monthly climate crop zoning.
+#' @return Returns a plot (ggplot object) with the monthly climate crop zoning based in air temperature.
 #' @export
 
 
