@@ -55,6 +55,7 @@
 #'                        temp3 = 30, temp4 = 40)
 #' }
 #' @return Returns a Rasterstack object of climate crop zoning based in air temperature.
+#' @export
 
 ccrop_zoning <- function(temp_per_month, temp1, temp2,  temp3, temp4){
 
