@@ -52,7 +52,7 @@ download_terraclimate <- function(dir_out, variable, years, region, sub_region){
       img<-mask(img, area)
       img<-projectRaster(img, crs = "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs")
       unlink(outfile)
-      writeRaster(img, filename = paste0(dir_out,"/", paste0(substr(name_img, 1, 21), ".tif")), format = "GTiff")
+      writeRaster(img, filename = paste0(dir_out,"/", paste0(substr(name_img, 1, 22), ".tif")), format = "GTiff")
     }
     
     setwd(dir_out)
