@@ -5,9 +5,11 @@
 \title{Download of maximum and minimum air temperature from 'TerraClimate'
 \if{html}{\figure{logo_cropZoning.png}{options: height= 300 width=auto style = float:right alt= Our logo}}}
 \usage{
-download_terraclimate(variable, years, region, sub_region)
+download_terraclimate(dir_out, variable, years, region, sub_region)
 }
 \arguments{
+\item{dir_out}{Directory where you want to save the raster images that you are goind to download.}
+
 \item{variable}{Variable to download. The variables can be the minimum (tmin) or maximum (tmax) air temperature of 'TerraClimate' (Rasterstack).}
 
 \item{years}{The period in years that the function should download.}
@@ -28,7 +30,7 @@ This function will download the tmax and tmin images and will load a rasterstack
 ### Downloading the minimum air temperature and maximum air temperature based on Brazil states.
 see_brazil_states()
 
-img <-download_terraclimate(variable = "tmin",
+img <-download_terraclimate(dir_out = "C:/teste/tmin/state", variable = "tmin",
                           years = c(2018:2019),
                           region = "brazil",
                           sub_region = 13)
@@ -36,7 +38,7 @@ img <-download_terraclimate(variable = "tmin",
 ### Downloading the minimum air temperature and maximum air temperature based on Brazil states.
 see_brazil_biomes()
 
-img <-download_terraclimate(variable = "tmin",
+img <-download_terraclimate(dir_out = "C:/teste/tmin/biome", variable = "tmin",
                           years = c(2018:2019),
                           region = "biomes_brazil",
                           sub_region = 6)
