@@ -9,7 +9,7 @@
 #' @examples
 #' \dontrun{
 #' 
-#' tmax_cal<- tmax_calibrated(slope = 0.874787, intercept = 4.612894 , tmax_stack = tmax);
+#' tmax_cal<- tmax_calibration(slope = 0.874787, intercept = 4.612894 , tmax_stack = tmax);
 #' }
 #' @return Returns a Rasterstack object of calibrated maximum air temperature.
 #' @export
