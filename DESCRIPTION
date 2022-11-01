@@ -1,7 +1,7 @@
 Package: cropZoning
 Type: Package
 Title: Climate Crop Zoning Based in Air Temperature for Brazil 
-Version: 1.0.1
+Version: 1.0.2
 Authors@R: c(person(given = "Roberto",
                     family = "Filgueiras",
                     role = c("aut","cre"),
@@ -19,9 +19,9 @@ Authors@R: c(person(given = "Roberto",
                     family = "da Cunha",
                     role = ("aut"),
                     comment = c(ORCID = "0000-0002-1671-1021")))
-Description: Climate crop zoning based in minimum and maximum air temperature. The data used in the package are from 'TerraClimate' dataset (<http://www.climatologylab.org/terraclimate.html>), but, it have been calibrated with automatic weather stations  of National Meteorological Institute of Brazil.  The climate crop zoning of this package can be run for all the Brazilian territory.
+Description: Climate crop zoning based in minimum and maximum air temperature. The data used in the package are from 'TerraClimate' dataset (<https://www.climatologylab.org/terraclimate.html>), but, it have been calibrated with automatic weather stations  of National Meteorological Institute of Brazil.  The climate crop zoning of this package can be run for all the Brazilian territory.
 Encoding: UTF-8
-LazyData: true
+Language: en-US
 RoxygenNote: 7.1.1
 License: CC BY 4.0
 Depends: R (>= 2.10)
