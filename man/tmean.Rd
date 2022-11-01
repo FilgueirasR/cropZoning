@@ -2,8 +2,7 @@
 % Please edit documentation in R/tmean.R
 \name{tmean}
 \alias{tmean}
-\title{Mean air temperature calculation
-\if{html}{\figure{logo_cropZoning.png}{options: height= 300 width=auto style = float:right alt= Our logo}}}
+\title{Mean air temperature calculation}
 \usage{
 tmean(tmax_stack, tmin_stack)
 }

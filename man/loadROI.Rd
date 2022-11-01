@@ -2,8 +2,7 @@
 % Please edit documentation in R/loadROI.R
 \name{loadROI}
 \alias{loadROI}
-\title{Load the data for the region of interest (ROI)
-\if{html}{\figure{logo_cropZoning.png}{options: height= 300 width=auto style = float:right alt= Our logo}}}
+\title{Load the data for the region of interest (ROI)}
 \usage{
 loadROI(variable, region, sub_region)
 }

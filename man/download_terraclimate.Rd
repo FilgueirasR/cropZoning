@@ -2,8 +2,7 @@
 % Please edit documentation in R/download_terraclimate.R
 \name{download_terraclimate}
 \alias{download_terraclimate}
-\title{Download of maximum and minimum air temperature from 'TerraClimate'
-\if{html}{\figure{logo_cropZoning.png}{options: height= 300 width=auto style = float:right alt= Our logo}}}
+\title{Download of maximum and minimum air temperature from 'TerraClimate'}
 \usage{
 download_terraclimate(dir_out, variable, years, region, sub_region)
 }

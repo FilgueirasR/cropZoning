@@ -2,8 +2,7 @@
 % Please edit documentation in R/ccrop_zoning.R
 \name{ccrop_zoning}
 \alias{ccrop_zoning}
-\title{Climate crop zoning based on monthly air temperature data
-\if{html}{\figure{logo_cropZoning.png}{options: height= 300 width=auto style = float:right alt= Our logo}}}
+\title{Climate crop zoning based on monthly air temperature data}
 \usage{
 ccrop_zoning(temp_per_month, temp1, temp2, temp3, temp4)
 }

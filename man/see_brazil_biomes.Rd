@@ -2,8 +2,7 @@
 % Please edit documentation in R/see_brazil_biomes.R
 \name{see_brazil_biomes}
 \alias{see_brazil_biomes}
-\title{Function to see the Brazilian biomes available in cropZoning package and how we can use it in the loadROI function
-\if{html}{\figure{logo_cropZoning.png}{options: height= 300 width=auto style = float:right alt= Our logo}}}
+\title{Function to see the Brazilian biomes available in cropZoning package and how we can use it in the loadROI function}
 \usage{
 see_brazil_biomes()
 }

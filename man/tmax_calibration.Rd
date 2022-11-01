@@ -2,8 +2,7 @@
 % Please edit documentation in R/calibration_tmax_and_tmin.R
 \name{tmax_calibration}
 \alias{tmax_calibration}
-\title{Calibration of maximum air temperature from TerraClimate
-\if{html}{\figure{logo_cropZoning.png}{options: height= 300 width=auto style = float:right alt= Our logo}}}
+\title{Calibration of maximum air temperature from TerraClimate}
 \usage{
 tmax_calibration(slope, intercept, tmax_stack)
 }

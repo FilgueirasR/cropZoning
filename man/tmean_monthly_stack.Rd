@@ -2,8 +2,7 @@
 % Please edit documentation in R/tmean_monthly_stack.R
 \name{tmean_monthly_stack}
 \alias{tmean_monthly_stack}
-\title{Monthly mean air temperature estimation to generate the climate crop zoning
-\if{html}{\figure{logo_cropZoning.png}{options: height= 300 width=auto style = float:right alt= Our logo}}}
+\title{Monthly mean air temperature estimation to generate the climate crop zoning}
 \usage{
 tmean_monthly_stack(tmean_stack, start_date, end_date)
 }

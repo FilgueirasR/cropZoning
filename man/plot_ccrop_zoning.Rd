@@ -2,8 +2,7 @@
 % Please edit documentation in R/plot_ccrop_zoning.R
 \name{plot_ccrop_zoning}
 \alias{plot_ccrop_zoning}
-\title{Function to plot the climate crop zoning stack  generated in ccrop_zoning
-\if{html}{\figure{logo_cropZoning.png}{options: height= 300 width=auto style = float:right alt= Our logo}}}
+\title{Function to plot the climate crop zoning stack  generated in ccrop_zoning}
 \usage{
 plot_ccrop_zoning(zoning)
 }
