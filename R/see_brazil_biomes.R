@@ -1,5 +1,4 @@
 #' Function to see the Brazilian biomes available in cropZoning package and how we can use it in the loadROI function
-#' \if{html}{\figure{logo_cropZoning.png}{options: height= 300 width=auto style = float:right alt= Our logo}}
 #'
 #' @description This fuction will show the biomes available in the package and how we can call each biome polygon.
 #' @examples

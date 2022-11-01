@@ -1,6 +1,5 @@
 #' Calibration of maximum air temperature from TerraClimate
-#' \if{html}{\figure{logo_cropZoning.png}{options: height= 300 width=auto style = float:right alt= Our logo}}
-#'
+#' 
 #' @description This function will calibrate the maximum air temperature from TerraClimate dataset based in the relationship with observed weather stations data.The values of slope and intercept informed in example correspond a calibration performed between 'Terraclimate' images and INMET automatic weather stations realized for all the brazilian territory.  
 #' @param tmax_stack stack of maximum air temperature
 #' @param slope the slope of the linear regression (numeric)

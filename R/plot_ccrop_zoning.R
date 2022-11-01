@@ -1,5 +1,4 @@
 #' Function to plot the climate crop zoning stack  generated in ccrop_zoning
-#' \if{html}{\figure{logo_cropZoning.png}{options: height= 300 width=auto style = float:right alt= Our logo}}
 #'  
 #' @description 
 #' This function will plot the ccrop_zoning output. The result of the plotting

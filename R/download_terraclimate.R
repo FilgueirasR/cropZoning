@@ -1,6 +1,5 @@
 #' Download of maximum and minimum air temperature from 'TerraClimate'
-#' \if{html}{\figure{logo_cropZoning.png}{options: height= 300 width=auto style = float:right alt= Our logo}}
-#'
+#' 
 #' @description This function will download the tmax and tmin images and will load a rasterstack according to the the region of interest (Region and sub_region). The images downloaded by this function are intended to be used for calculating the climatic zoning of crops. To calculate the climatic zoning of the crops, you first have to calculate the mean air temperature (function tmean) and the monthly air temperature (function tmean_monthly). 
 #' @param dir_out Directory where you want to save the raster images that you are goind to download.
 #' @param variable Variable to download. The variables can be the minimum (tmin) or maximum (tmax) air temperature of 'TerraClimate' (Rasterstack).

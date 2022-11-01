@@ -1,5 +1,4 @@
 #' Load the data for the region of interest (ROI)
-#' \if{html}{\figure{logo_cropZoning.png}{options: height= 300 width=auto style = float:right alt= Our logo}}
 #'
 #' @description This function will load the air temperature data (Rasterstack) for the region of interest (ROI). The images loaded by this function are intended to be used, as example, for calculating the climatic zoning of crops. To calculate the climatic zoning of the crops, you first have to calculate the mean air temperature (function tmean) and the monthly air temperature (function tmean_monthly). 
 #' @param variable Stack of minimum (tmin) or maximum (tmax) air temperature (Rasterstack).

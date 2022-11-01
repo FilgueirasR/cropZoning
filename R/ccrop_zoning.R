@@ -1,5 +1,4 @@
 #' Climate crop zoning based on monthly air temperature data
-#' \if{html}{\figure{logo_cropZoning.png}{options: height= 300 width=auto style = float:right alt= Our logo}}
 #'
 #' @description This function will calculate the climate crop zoning for the range of air temperature informed. The result will be a raster image with five possible values (values of 1 to 5) according to what is explained below.
 #'   
