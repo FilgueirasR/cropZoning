@@ -14,10 +14,10 @@ tmin_calibration(slope, intercept, tmin_stack)
 \item{tmin_stack}{stack of maximum air temperature}
 }
 \value{
-Returns a Rasterstack of calibrated minimum air temperature.
+Returns a SpatRaster of calibrated minimum air temperature.
 }
 \description{
-This fuction will calibrate the minimum air temperature from TerraClimate dataset based in the relationship with observed weather stations data. The values of slope and intercept informed in example correspond a calibration performed between 'Terraclimate' images and INMET automatic weather stations realized for all the brazilian territory.
+This function will calibrate the minimum air temperature from TerraClimate dataset based in the relationship with observed weather stations data. The values of slope and intercept informed in example correspond a calibration performed between 'Terraclimate' images and INMET automatic weather stations realized for all the brazilian territory.
 }
 \examples{
 \dontrun{

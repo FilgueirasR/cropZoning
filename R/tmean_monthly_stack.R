@@ -4,7 +4,7 @@
 #' @param tmean_stack Stack of mean air temperature based on minimum and maximum air temperature Rasterstack
 #' @param start_date Date that start the investigation, should be in the following format (1958-01-01 /Year-Month-Day)
 #' @param end_date Date that end the investigation, should be in the following format (2017-12-31 /Year-Month-Day)
-#' @import raster
+#' @import terra
 #' @examples
 #' \dontrun{
 #' 
@@ -22,7 +22,7 @@
 tmean_monthly_stack<-function(tmean_stack, start_date, end_date){
   id_month <- seq(as.Date(start_date), as.Date(end_date), 'month')
   months <- as.numeric(format(id_month, "%m"))
-  tmean_per_month <- stackApply(tmean_stack, indices =months, mean)
+  tmean_per_month <- terra::tapp(tmean_stack, index = months, mean)
   names(tmean_per_month)<-c("January", "February", "March", "April", "May", "June",
                             "July", "August", "September", "October", "November", "December")
 

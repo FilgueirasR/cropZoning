@@ -12,7 +12,7 @@ tmean(tmax_stack, tmin_stack)
 \item{tmin_stack}{stack of minimum air temperature}
 }
 \value{
-Returns a Rasterstack object of mean air temperature.
+Returns a SpatRaster object of mean air temperature.
 }
 \description{
 This fuction will calculate the mean air temperature from  minimum and maximum air temperature data.

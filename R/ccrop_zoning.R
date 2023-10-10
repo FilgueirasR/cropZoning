@@ -23,7 +23,7 @@
 #' @param temp2 minimum suitable temperature (numeric)
 #' @param temp3 maximum suitable temperature (numeric)
 #' @param temp4 unsuitable due to high temperature (numeric)
-#' @import raster
+#' @import terra
 #' @examples
 #' \dontrun{
 #' ### Example with Brazil states
@@ -53,7 +53,7 @@
 #'                        temp1 = 10 , temp2 = 20, 
 #'                        temp3 = 30, temp4 = 40)
 #' }
-#' @return Returns a Rasterstack object of climate crop zoning based in air temperature.
+#' @return Returns a SpatRaster object of climate crop zoning based in air temperature.
 #' @export
 
 ccrop_zoning <- function(temp_per_month, temp1, temp2,  temp3, temp4){
@@ -64,8 +64,9 @@ reclass_temp_df<-c(temp2, temp3, 1,
                      -Inf, temp1, 4,
                      temp4, Inf, 5)
 
+reclass_temp_df<- matrix(reclass_temp_df, ncol=3, byrow=TRUE)
 
-zoning.matrix<- reclassify(temp_per_month, reclass_temp_df, right=TRUE)
+zoning.matrix<- terra::classify(temp_per_month, reclass_temp_df, right=TRUE)
 return(zoning.matrix)
 
 }

@@ -14,6 +14,7 @@
 #' }
 #' 
 #' @import ggplot2
+#' @import terra
 #' @importFrom tidyr gather
 #' @importFrom stats na.omit
 #' @param zoning A stack generated in ccrop_zoning
@@ -28,11 +29,13 @@
 #' @export
 
 
-
 plot_ccrop_zoning<-function(zoning){
   
+xy<-terra::crds(zoning)
 
-df <- as.data.frame(rasterToPoints(zoning))
+df <- as.data.frame(terra::as.points(zoning))
+df<- cbind(xy, df)
+
 for(i in 3:14){
   df[,i] <- factor(df[,i],levels=c(1,2,3, 4, 5),
                    labels=c("ST", "RLT", "RHT","ULT",
@@ -40,7 +43,7 @@ for(i in 3:14){
 }
 
 
-df<-na.omit(gather(df, "Months", "climatic zoning", 3:14))
+df<-stats::na.omit(tidyr::gather(df, "Months", "climatic zoning", 3:14))
 Name.months<-c( "January", "February", "March", "April", "May", "June",
                 "July", "August", "September", "October", "November", "December")
 levels(df$Months)<-Name.months
@@ -51,9 +54,9 @@ cbbPalette <- c("ST" = "#009E73", "RLT" = "#56B4E9",
                 "UHT" = "#E69F00")# SAT = Suitable air temperature;
 
 unique(df$Months)
-ggplot(data=df, aes(y = df$y, x = df$x)) +
+ggplot2::ggplot(data=df, aes(y = df$y, x = df$x)) +
   geom_raster(aes(fill= df$`climatic zoning`))+
-  coord_fixed(xlim = c(extent(zoning)[1], extent(zoning)[2]))+
+  coord_fixed(xlim = c(terra::ext(zoning)[1], terra::ext(zoning)[2]))+
   scale_fill_manual(values = cbbPalette) +
   theme(axis.title.x = element_blank(),
         axis.title.y = element_blank(),

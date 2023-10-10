@@ -29,18 +29,22 @@ This function will download the tmax and tmin images and will load a rasterstack
 ### Downloading the minimum air temperature and maximum air temperature based on Brazil states.
 see_brazil_states()
 
-img <-download_terraclimate(dir_out = "C:/teste/tmin/state", variable = "tmin",
-                          years = c(2018:2019),
-                          region = "brazil",
-                          sub_region = 13)
+img <- download_terraclimate(
+  dir_out = "C:/teste/tmin/state", variable = "tmin",
+  years = c(2018:2019),
+  region = "brazil",
+  sub_region = 13
+)
 
 ### Downloading the minimum air temperature and maximum air temperature based on Brazil states.
 see_brazil_biomes()
 
-img <-download_terraclimate(dir_out = "C:/teste/tmin/biome", variable = "tmin",
-                          years = c(2018:2019),
-                          region = "biomes_brazil",
-                          sub_region = 6)
+img <- download_terraclimate(
+  dir_out = "C:/teste/tmin/biome", variable = "tmin",
+  years = c(2018:2019),
+  region = "biomes_brazil",
+  sub_region = 6
+)
 }
 }
 \references{

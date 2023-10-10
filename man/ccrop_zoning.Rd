@@ -18,7 +18,7 @@ ccrop_zoning(temp_per_month, temp1, temp2, temp3, temp4)
 \item{temp4}{unsuitable due to high temperature (numeric)}
 }
 \value{
-Returns a Rasterstack object of climate crop zoning based in air temperature.
+Returns a SpatRaster object of climate crop zoning based in air temperature.
 }
 \description{
 This function will calculate the climate crop zoning for the range of air temperature informed. The result will be a raster image with five possible values (values of 1 to 5) according to what is explained below.

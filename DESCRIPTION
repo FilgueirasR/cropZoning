@@ -1,7 +1,7 @@
 Package: cropZoning
 Type: Package
 Title: Climate Crop Zoning Based in Air Temperature for Brazil 
-Version: 1.0.2
+Version: 1.0.3
 Authors@R: c(person(given = "Roberto",
                     family = "Filgueiras",
                     role = c("aut","cre"),
@@ -25,7 +25,7 @@ Language: en-US
 RoxygenNote: 7.1.1
 License: CC BY 4.0
 Depends: R (>= 2.10)
-Imports: raster, tidyr, ggplot2, rgdal, ncdf4
+Imports: terra, tidyr, ggplot2, sf, ncdf4
 BugReports: https://github.com/FilgueirasR/cropZoning/issues
 NeedsCompilation: no
 Packaged: 2020-12-15 16:17:07 UTC; Filgueiras

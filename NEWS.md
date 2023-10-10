@@ -1,3 +1,7 @@
+# cropZoning 1.0.3
+
+R-spatial evolution: retirement of rgdal, rgeos and maptools upgrade.
+
 # cropZoning 1.0.2
 
 ## HTML Bug fixes 
