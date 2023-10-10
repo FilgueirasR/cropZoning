@@ -1,8 +1,8 @@
 #' Load the data for the region of interest (ROI)
 #'
-#' @description This function will load the air temperature data (Rasterstack) for the region of interest (ROI). The images loaded by this function are intended to be used, as example, for calculating the climatic zoning of crops. To calculate the climatic zoning of the crops, you first have to calculate the mean air temperature (function tmean) and the monthly air temperature (function tmean_monthly). 
-#' @param variable Stack of minimum (tmin) or maximum (tmax) air temperature (Rasterstack).
-#' @param region Use the "brazil" shapefile to extract the Rasterstack (variable) for one state (Brazilian state), or use the "biomes_brazil" to extract the Rasterstack (variable) for one biome of Brazil.
+#' @description This function will load the air temperature data (SpatRaster) for the region of interest (ROI). The images loaded by this function are intended to be used, as example, for calculating the climatic zoning of crops. To calculate the climatic zoning of the crops, you first have to calculate the mean air temperature (function tmean) and the monthly air temperature (function tmean_monthly). 
+#' @param variable Stack of minimum (tmin) or maximum (tmax) air temperature (SpatRaster).
+#' @param region Use the "brazil" shapefile to extract the SpatRaster (variable) for one state (Brazilian state), or use the "biomes_brazil" to extract the Rasterstack (variable) for one biome of Brazil.
 #' @param sub_region You have two options in this section, if you choice the brazil (in region parameter) you need to choice the Brazilian states, but if you choice the biomes_brazil (in region parameter) you must choice one of Brazilian biomes.
 #' @import terra
 #' @import sf

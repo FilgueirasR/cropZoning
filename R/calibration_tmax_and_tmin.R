@@ -4,7 +4,6 @@
 #' @param tmax_stack stack of maximum air temperature
 #' @param slope the slope of the linear regression (numeric)
 #' @param intercept the intercept of the linear regression (numeric)
-#' @import terra
 #' @examples
 #' \dontrun{
 #' 

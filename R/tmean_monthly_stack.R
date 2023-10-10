@@ -4,7 +4,7 @@
 #' @param tmean_stack Stack of mean air temperature based on minimum and maximum air temperature Rasterstack
 #' @param start_date Date that start the investigation, should be in the following format (1958-01-01 /Year-Month-Day)
 #' @param end_date Date that end the investigation, should be in the following format (2017-12-31 /Year-Month-Day)
-#' @import terra
+#' @importFrom  terra tapp
 #' @examples
 #' \dontrun{
 #' 

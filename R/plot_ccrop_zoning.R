@@ -13,9 +13,26 @@
 #'   \item UHT: Unsuitable due to high temperature 
 #' }
 #' 
-#' @import ggplot2
-#' @importFrom tidyr gather
-#' @importFrom stats na.omit
+#' @importFrom ggplot2 
+#'   ggplot
+#'   aes
+#'   geom_raster
+#'   coord_fixed
+#'   scale_fill_manual
+#'   theme
+#'   facet_wrap
+#'   guides
+#'   guide_legend
+#'   element_text
+#'   element_blank
+#'   labs
+#'   unit
+#' 
+#' @importFrom tidyr 
+#'   gather
+#' 
+#' @importFrom terra 
+#'   na.omit
 #' @param zoning A stack generated in ccrop_zoning
 #' @examples 
 #' ### Data preparation
@@ -42,7 +59,7 @@ for(i in 3:14){
 }
 
 
-df<-na.omit(tidyr::gather(df, "Months", "climatic zoning", 3:14))
+df<-terra::na.omit(tidyr::gather(df, "Months", "climatic zoning", 3:14))
 Name.months<-c( "January", "February", "March", "April", "May", "June",
                 "July", "August", "September", "October", "November", "December")
 levels(df$Months)<-Name.months
@@ -52,7 +69,7 @@ cbbPalette <- c("ST" = "#009E73", "RLT" = "#56B4E9",
                 "RHT" = "#F0E442", "ULT" = "#000000",
                 "UHT" = "#E69F00")# SAT = Suitable air temperature;
 
-unique(df$Months)
+
 ggplot2::ggplot(data=df, aes(y = df$y, x = df$x)) +
   geom_raster(aes(fill= df$`climatic zoning`))+
   coord_fixed(xlim = c(terra::ext(zoning)[1], terra::ext(zoning)[2]))+
@@ -71,5 +88,4 @@ ggplot2::ggplot(data=df, aes(y = df$y, x = df$x)) +
         legend.title = element_text(size = 14))+
   labs(fill = "Climatic zoning:")
 }
-
 

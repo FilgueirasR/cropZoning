@@ -23,7 +23,7 @@
 #' @param temp2 minimum suitable temperature (numeric)
 #' @param temp3 maximum suitable temperature (numeric)
 #' @param temp4 unsuitable due to high temperature (numeric)
-#' @import terra
+#' @importFrom  terra classify
 #' @examples
 #' \dontrun{
 #' ### Example with Brazil states
