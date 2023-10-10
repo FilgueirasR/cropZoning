@@ -14,7 +14,6 @@
 #' }
 #' 
 #' @import ggplot2
-#' @import terra
 #' @importFrom tidyr gather
 #' @importFrom stats na.omit
 #' @param zoning A stack generated in ccrop_zoning
@@ -43,7 +42,7 @@ for(i in 3:14){
 }
 
 
-df<-stats::na.omit(tidyr::gather(df, "Months", "climatic zoning", 3:14))
+df<-na.omit(tidyr::gather(df, "Months", "climatic zoning", 3:14))
 Name.months<-c( "January", "February", "March", "April", "May", "June",
                 "July", "August", "September", "October", "November", "December")
 levels(df$Months)<-Name.months
