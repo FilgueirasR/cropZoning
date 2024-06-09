@@ -7,7 +7,7 @@
 download_terraclimate(dir_out, variable, years, region, sub_region)
 }
 \arguments{
-\item{dir_out}{Directory where you want to save the raster images that you are goind to download.}
+\item{dir_out}{Directory where you want to save the raster images that you are goind to download. Each variable should be locate in one folder.}
 
 \item{variable}{Variable to download. The variables can be the minimum (tmin) or maximum (tmax) air temperature of 'TerraClimate' (Rasterstack).}
 
@@ -15,7 +15,7 @@ download_terraclimate(dir_out, variable, years, region, sub_region)
 
 \item{region}{Use the "brazil" shapefile to extract the Rasterstack (variable) for one state (Brazilian state), or use the "biomes_brazil" to extract the Rasterstack (variable) for one biome of Brazil.}
 
-\item{sub_region}{You have two options in this section, if you choice the brazil (in region parameter) you need to choice the Brazilian states, but if you choice the biomes_brazil (in region parameter) you must choice one of Brazilian biomes.}
+\item{sub_region}{You have two options in this section, if you choice the brazil (in region parameter) you need to choice the Brazilian states, but if you choice the biomes_brazil (in region parameter) you must choice one of Brazilian biomes. Another option is to select "all" to download images for the entire territory of Brazil.}
 }
 \value{
 Returns a Rasterstack of tmin (minimum air temperature) or tmax (maximum air temperature).

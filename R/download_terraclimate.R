@@ -1,10 +1,10 @@
 #' Download of maximum and minimum air temperature from 'TerraClimate'
 #'
 #' @description This function will download the tmax and tmin images and will load a rasterstack according to the the region of interest (Region and sub_region). The images downloaded by this function are intended to be used for calculating the climatic zoning of crops. To calculate the climatic zoning of the crops, you first have to calculate the mean air temperature (function tmean) and the monthly air temperature (function tmean_monthly).
-#' @param dir_out Directory where you want to save the raster images that you are goind to download.
+#' @param dir_out Directory where you want to save the raster images that you are goind to download. Each variable should be locate in one folder.
 #' @param variable Variable to download. The variables can be the minimum (tmin) or maximum (tmax) air temperature of 'TerraClimate' (Rasterstack).
 #' @param region Use the "brazil" shapefile to extract the Rasterstack (variable) for one state (Brazilian state), or use the "biomes_brazil" to extract the Rasterstack (variable) for one biome of Brazil.
-#' @param sub_region You have two options in this section, if you choice the brazil (in region parameter) you need to choice the Brazilian states, but if you choice the biomes_brazil (in region parameter) you must choice one of Brazilian biomes.
+#' @param sub_region You have two options in this section, if you choice the brazil (in region parameter) you need to choice the Brazilian states, but if you choice the biomes_brazil (in region parameter) you must choice one of Brazilian biomes. Another option is to select "all" to download images for the entire territory of Brazil.
 #' @param years The period in years that the function should download.
 #' @import terra
 #' @import sf
@@ -53,8 +53,12 @@ download_terraclimate <- function(dir_out, variable, years, region, sub_region) 
       shp_path <- system.file("extdata", paste0(region, ".shp"), package = "cropZoning")
       
       invisible(capture.output(shp <- sf::st_read(shp_path)))
-
-      area <- shp[sub_region, ]
+      
+      if(sub_region == "all"){
+        area<- shp}else{
+          area <- shp[sub_region, ]
+        }
+      
       area <- terra::vect(area)
       img <- terra::crop(img, area)
       img <- terra::mask(img, area)
