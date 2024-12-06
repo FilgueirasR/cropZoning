@@ -1,4 +1,5 @@
 ![CRAN Total Downloads](https://cranlogs.r-pkg.org/badges/grand-total/cropZoning)
+![CRAN Download Badge](https://cranlogs.r-pkg.org/badges/cropZoning)](https://cran.r-project.org/package=cropZoning)
 
 # cropZoning
 
