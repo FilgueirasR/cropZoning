@@ -5,6 +5,7 @@
 
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/FilgueirasR/cropZoning/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/FilgueirasR/cropZoning/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of cropZoning is to make climate zoning of different crops (air temperature based) for any region of Brazil. For this,
