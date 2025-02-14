@@ -1,3 +1,6 @@
+![CRAN Total Downloads](https://cranlogs.r-pkg.org/badges/grand-total/cropZoning)
+![CRAN Download Badge](https://cranlogs.r-pkg.org/badges/cropZoning)
+
 # cropZoning
 
 <div class="fluid-row" id="header">
